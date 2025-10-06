@@ -1,0 +1,18 @@
+# Trading Settings
+initialTradeLots=0.02
+lotSizingMode=FIXED_LOTS
+
+# Recovery / Martingale Settings
+martingaleEnabled=true
+lotMultiplier=1.6
+maxLayers=7
+floatingMinusPoints=2000
+
+# Profit & Loss Targets
+closeAllOnProfit=5.50
+closeAllOnLoss=-750.0
+
+# Trailing Stop
+useTrailingProfit=true
+trailingStartPips=600
+trailingStopPips=250
