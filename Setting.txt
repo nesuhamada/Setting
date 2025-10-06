@@ -1,18 +1,65 @@
+# Entry Logic Settings
+entryMode=1
+usePrevCandleFilter=true
+filter_HistoryCandles=4
+filter_TriggerCandles=1
+
 # Trading Settings
-initialTradeLots=0.02
-lotSizingMode=FIXED_LOTS
+lotSizingMode=0
+initialTradeLots=0.01
+allowHedging=true
 
-# Recovery / Martingale Settings
-martingaleEnabled=true
-lotMultiplier=1.6
-maxLayers=7
-floatingMinusPoints=2000
+# Equity Management
+useEquityTarget=true
+equityTarget=30000.0
+minProfitAfterTarget=1.0
+useEquityStepTarget=false
+equityStepAmount=1.0
+profitMode=0
+closeAllOnProfit=100000.0
+lossMode=0
+closeAllOnLoss=-50000.0
+dynamicLossMultiplier=-4000.0
 
-# Profit & Loss Targets
-closeAllOnProfit=5.50
-closeAllOnLoss=-750.0
-
-# Trailing Stop
+# Take Profit & Trailing Stop
 useTrailingProfit=true
-trailingStartPips=600
-trailingStopPips=250
+trailingStartPips=5000
+trailingStopPips=1000
+
+# Mode Dev
+Mode: Deviation
+deviationLogic=0
+deviationTriggerPoints=300
+deviationModeTakeProfitPips=3000
+resetCandleCount=1000
+
+# Mode Rev
+Mode: Reversal 2
+rev2_LookbackBars=500
+rev2_MinTriggerPips=3000
+rev2_SignalResetBars=1000
+
+# Recovery Settings
+martingaleEnabled=true
+floatingMinusPoints=6000
+lotMultiplier=2.0
+maxLayers=4
+tpCalcStartLayer=4
+
+# Emergency Hedging Settings (Unified)
+emergencyAction=0
+maxEmergencyHedgeLayers=7
+emergencyHedgeMultiplier=2.0
+emergencySLCandleCount=3
+emergencyHedgeNextLayerCandleCount=4
+
+# News Filter Settings
+useNewsFilter=true
+minutesBeforeNews=45
+minutesAfterNews=45
+newsTime1=1759758300
+newsTime2=1759763700
+newsTime3=1759765500
+newsTime4=0
+newsTime5=0
+
