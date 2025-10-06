@@ -2,7 +2,7 @@
 # Update this file to change EA parameters remotely
 
 # Trading Settings
-initialTradeLots=0.01
+initialTradeLots=0.3
 
 # Candle Filter 
 usePrevCandleFilter   = 1
