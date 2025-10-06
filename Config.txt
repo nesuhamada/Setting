@@ -1,0 +1,13 @@
+# Gold Mining EA External Configuration
+initialTradeLots=0.02
+martingaleEnabled=1
+lotMultiplier=1.8
+maxLayers=6
+floatingMinusPoints=1200
+closeAllOnProfit=50.0
+closeAllOnLoss=-300.0
+useTrailingProfit=1
+trailingStartPips=400
+trailingStopPips=250
+useEquityTarget=1
+equityTarget=25000.0
