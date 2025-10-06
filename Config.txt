@@ -37,7 +37,7 @@ minutesAfterNews=45
 useSessionFilter=1
 
 # Emergency Settings
-emergencyAction=0
+emergencyAction=false
 maxEmergencyHedgeLayers=7
 emergencyHedgeMultiplier=2.0
 emergencySLCandleCount=3
